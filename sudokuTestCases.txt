@@ -1,0 +1,29 @@
+Test Case 1: Invalid Column
+    Inputs: 8/0, 6
+    Output: Invalid column message
+    Type: Boundary condition, column must be limited to 1 through 9
+
+Test Case 2: Invalid Row
+    Inputs: 0/1, 6
+    Output: Invalid row message
+    Type: Boundary condition, row must be limited to 1 through 9
+
+Test Case 3: Reverse Coordinate and Space Already Filled
+    Inputs: 1/1, 5
+    Outputs: No error for reverse coordinate, space already filled message
+    Type: Requirement/Error State, the space cannot be edited if it is already filled; It also must be able to accept reverse coordinates.
+
+Test Case 4: Lowercase Coordinate and Unique Row
+    Inputs: 2/2, 2
+    Outputs: No error for lowercase coordinate, row already has number message
+    Type: Requirement/Error State, the space cannot be edited if the number exists in the row, and must be able to accept it.
+
+Test Case 5: Unique Column
+    Inputs: 2/2, 7
+    Output: Column already has number message
+    Type: Requirement, the space cannot be edited if the number exists in the column.
+
+Test Case 6: Number Already In Space
+    Inputs: 1/9, 9
+    Output: Number already in space message
+    Type: Requirement, space cannot be edited if the number is already in the space.
